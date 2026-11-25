@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3001/api/app/add_remove_favorite
+method: POST
+headers:
+  access_token: 7Ux0Xbknc7Xi7AGWgrVX
+body:
+  type: urlencoded
+  content:
+    prod_id: "5"
+order: 6000

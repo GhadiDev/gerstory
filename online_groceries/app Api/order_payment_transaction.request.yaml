@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://localhost:3001/api/app/order_payment_transaction
+method: POST
+headers:
+  access_token: BLZE1kRNy1jmVTb4Ar9r
+body:
+  type: urlencoded
+  content:
+    - key: order_payment_transaction
+      value: "4"
+    - key: payment_transaction_id
+      value: "2122312312313"
+    - key: payment_status
+      value: "1"
+      description: 1 = success, 2 = fail
+    - key: transaction_payload
+      value: '{"status":"1","payment_transaction_id":"2122312312313" }'
+order: 24000

@@ -5,7 +5,7 @@
         "password":"",
         "database":"groceries",
         "multipleStatements": true,
-        "timezone":"utc+5:30",
+        "timezone": "+05:30",
         "charset":"utf8mb4"
     }
 }

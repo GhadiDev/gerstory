@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3001/api/app/remove_payment_method
+method: POST
+headers:
+  access_token: BLZE1kRNy1jmVTb4Ar9r
+body:
+  type: urlencoded
+  content:
+    pay_id: ""
+order: 21000

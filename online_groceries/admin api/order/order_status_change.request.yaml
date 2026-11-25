@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/order_status_change
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: urlencoded
+  content:
+    - key: order_id
+      value: "2"
+    - key: user_id
+      value: "2"
+    - key: order_status
+      value: ""
+      description: "2: order_accept, 3: order_delivered, 4: cancel, 5: order declined\t"
+order: 5000

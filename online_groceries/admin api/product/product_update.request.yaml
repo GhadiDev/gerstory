@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/product_update
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: urlencoded
+  content:
+    name: Red Apple
+    detail: ABCASDAD ASDASDASDSD
+    cat_id: "1"
+    brand_id: "1"
+    type_id: "1"
+    unit_name: kg
+    unit_value: "1"
+    nutrition_weight: 200g
+    price: "2.99"
+    prod_id: "4"
+order: 2000

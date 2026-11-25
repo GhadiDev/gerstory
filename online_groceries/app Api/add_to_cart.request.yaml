@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:3001/api/app/add_to_cart
+method: POST
+headers:
+  access_token: j0JrTIsOgbCiLhR3UsYy
+body:
+  type: urlencoded
+  content:
+    prod_id: "5"
+    qty: "1"
+order: 10000

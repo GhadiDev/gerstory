@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/product_type_update
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: formdata
+  content:
+    - type: text
+      key: type_name
+      value: Pulses
+    - type: text
+      key: color
+      value: F8A44C
+    - type: text
+      key: type_id
+      value: "1"
+order: 2000

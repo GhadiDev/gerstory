@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3001/api/app/login
+method: POST
+body:
+  type: urlencoded
+  content:
+    email: test@gmail.com
+    password: "123456"
+    dervice_token: "876543210"
+order: 2000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/product_category_update
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: formdata
+  content:
+    - type: text
+      key: cat_name
+      value: Cooking Oil & Ghee
+    - type: text
+      key: color
+      value: F8A44C
+    - type: file
+      key: image
+      src: /Users/CodeForAny/Desktop/CodeForAny/Flutter/online_groceries/assets/img/frash_fruits.png
+    - type: text
+      key: cat_id
+      value: ""
+order: 2000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:3001/api/app/notification_list
+method: POST
+headers:
+  access_token: leu2kpOaiwHeFVS5EKKo
+body:
+  type: urlencoded
+order: 27000

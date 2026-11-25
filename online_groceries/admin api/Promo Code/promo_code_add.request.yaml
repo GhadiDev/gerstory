@@ -1,0 +1,30 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/promo_code_add
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: urlencoded
+  content:
+    - key: code
+      value: SAVE10
+    - key: title
+      value: Save 10% more
+    - key: start_date
+      value: ""
+      description: yyyy-mm-dd hh:mm:ss
+    - key: end_date
+      value: ""
+      description: yyyy-mm-dd hh:mm:ss
+    - key: description
+      value: Save 10% more
+    - key: type
+      value: "1"
+      description: 1 = Per, 2 Fix
+    - key: min_order_amount
+      value: "5"
+    - key: max_discount_amount
+      value: "50"
+    - key: offer_price
+      value: "10"
+order: 1000

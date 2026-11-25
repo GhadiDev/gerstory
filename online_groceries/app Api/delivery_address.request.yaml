@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:3001/api/app/delivery_address
+method: POST
+headers:
+  access_token: Xm6Y67jto6aQmN7wwkQ6
+body:
+  type: urlencoded
+order: 17000

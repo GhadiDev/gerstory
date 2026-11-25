@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/product_category_list
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: urlencoded
+order: 3000

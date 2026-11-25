@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:3001/api/app/update_cart
+method: POST
+headers:
+  access_token: j0JrTIsOgbCiLhR3UsYy
+body:
+  type: urlencoded
+  content:
+    prod_id: "5"
+    new_qty: "1"
+    cart_id: "5"
+order: 11000

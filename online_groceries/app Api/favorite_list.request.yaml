@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:3001/api/app/favorite_list
+method: POST
+headers:
+  access_token: j0JrTIsOgbCiLhR3UsYy
+body:
+  type: urlencoded
+order: 7000

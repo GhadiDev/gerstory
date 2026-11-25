@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:3001/api/app/home
+method: POST
+headers:
+  access_token: pJYFk5XGrCrGZl92K5qu
+order: 4000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:3001/api/app/cart_list
+method: POST
+headers:
+  access_token: leu2kpOaiwHeFVS5EKKo
+body:
+  type: urlencoded
+  content:
+    promo_code_id: ""
+    deliver_type: ""
+order: 12000

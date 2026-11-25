@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/offer_add
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: urlencoded
+  content:
+    - key: prod_id
+      value: big
+    - key: price
+      value: ""
+    - key: start_date
+      value: ""
+      description: yyyy-mm-dd hh:mm:ss
+    - key: end_date
+      value: ""
+      description: yyyy-mm-dd hh:mm:ss
+order: 1000

@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3001/api/app/explore_category_items_list
+method: POST
+headers:
+  access_token: pJYFk5XGrCrGZl92K5qu
+body:
+  type: urlencoded
+  content:
+    cat_id: "1"
+order: 9000

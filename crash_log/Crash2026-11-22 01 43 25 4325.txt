@@ -1,0 +1,11 @@
+Error: Table 'groceries.zone_detail' doesn't exist
+    at Packet.asError (/Users/ghadialmazmomi/Documents/ALL LEARING MATILAER/Development Apps/online_groceries_shop_app_backend_api_node/node_modules/mysql2/lib/packets/packet.js:930:17)
+    at Query.execute (/Users/ghadialmazmomi/Documents/ALL LEARING MATILAER/Development Apps/online_groceries_shop_app_backend_api_node/node_modules/mysql2/lib/commands/command.js:29:26)
+    at Connection.handlePacket (/Users/ghadialmazmomi/Documents/ALL LEARING MATILAER/Development Apps/online_groceries_shop_app_backend_api_node/node_modules/mysql2/lib/base/connection.js:616:34)
+    at PacketParser.onPacket (/Users/ghadialmazmomi/Documents/ALL LEARING MATILAER/Development Apps/online_groceries_shop_app_backend_api_node/node_modules/mysql2/lib/base/connection.js:148:12)
+    at PacketParser.executeStart (/Users/ghadialmazmomi/Documents/ALL LEARING MATILAER/Development Apps/online_groceries_shop_app_backend_api_node/node_modules/mysql2/lib/packet_parser.js:86:16)
+    at Socket.<anonymous> (/Users/ghadialmazmomi/Documents/ALL LEARING MATILAER/Development Apps/online_groceries_shop_app_backend_api_node/node_modules/mysql2/lib/base/connection.js:156:25)
+    at Socket.emit (node:events:514:20)
+    at addChunk (node:internal/streams/readable:568:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:519:3)
+    at Readable.push (node:internal/streams/readable:399:5)

@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:3001/api/app/get_zone_area
+method: POST
+order: 1000

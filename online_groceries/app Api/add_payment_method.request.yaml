@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:3001/api/app/add_payment_method
+method: POST
+headers:
+  access_token: BLZE1kRNy1jmVTb4Ar9r
+body:
+  type: urlencoded
+  content:
+    name: ""
+    card_number: ""
+    card_month: ""
+    card_year: ""
+order: 20000

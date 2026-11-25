@@ -1,0 +1,52 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/product_add
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: Red Apple
+    - type: text
+      key: detail
+      value: ABCASDAD ASDASDASDSD
+    - type: text
+      key: cat_id
+      value: "1"
+    - type: text
+      key: brand_id
+      value: "1"
+    - type: text
+      key: type_id
+      value: "1"
+    - type: text
+      key: unit_name
+      value: kg
+    - type: text
+      key: unit_value
+      value: "1"
+    - type: text
+      key: nutrition_weight
+      value: 200g
+    - type: text
+      key: price
+      value: "2.99"
+    - type: text
+      key: nutrition_date
+      value: |-
+        [{
+                                            "name": "Calories",
+                                            "value": "104"
+                                        }, {
+                                            "name": "Fat",
+                                            "value": "0.3g"
+                                        }]
+    - type: file
+      key: image
+      src: ""
+    - type: file
+      key: image
+      src: ""
+order: 1000

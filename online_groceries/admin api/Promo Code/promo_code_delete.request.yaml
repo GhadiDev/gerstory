@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/promo_code_delete
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: urlencoded
+  content:
+    promo_code_id: "1"
+order: 4000

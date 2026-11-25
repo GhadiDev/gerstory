@@ -110,32 +110,72 @@ module.exports.controller = (app, io, socket_list) => {
         })
     })
 
-    app.post('/api/app/get_zone_area', (req, res) => {
-        helper.Dlog(req.body);
-        var reqObj = req.body;
+//     app.post('/api/app/get_zone_area', (req, res) => {
+//         helper.Dlog(req.body);
+//         var reqObj = req.body;
 
-        db.query("SELECT `zone_id`, `name` FROM `zone_detail` WHERE `status`= ? ;" +
-            "SELECT `ad`.`area_id`, `ad`.`zone_id` , `ad`.`name`, `zd`.`name` AS `zone_name`  FROM `area_detail` AS `ad` " +
-            "INNER JOIN `zone_detail` AS `zd` ON `zd`.`zone_id` = `ad`.`zone_id` AND `zd`.`status` = '1' " +
-            "WHERE `ad`.`status`= ?", ["1", "1"], (err, result) => {
+//         db.query("SELECT `zone_id`, `name` FROM `zone_detail` WHERE `status`= ? ;" +
+//             "SELECT `ad`.`area_id`, `ad`.`zone_id` , `ad`.`name`, `zd`.`name` AS `zone_name`  FROM `area_detail` AS `ad` " +
+//             "INNER JOIN `zone_detail` AS `zd` ON `zd`.`zone_id` = `ad`.`zone_id` AND `zd`.`status` = '1' " +
+//             "WHERE `ad`.`status`= ?", ["1", "1"], (err, result) => {
 
-                if (err) {
-                    helper.ThrowHtmlError(err, res);
-                    return;
-                }
+//                if (err) {
+//     console.error("GET_ZONE_AREA DATABASE ERROR:", err);
+//     helper.ThrowHtmlError(err, res);
+//     return;
+// }
 
-                result[0].forEach(zObj => {
-                    zObj.area_list = result[1].filter((aObj) => {
-                        return aObj.zone_id == zObj.zone_id
-                    });
+//                 result[0].forEach(zObj => {
+//                     zObj.area_list = result[1].filter((aObj) => {
+//                         return aObj.zone_id == zObj.zone_id
+//                     });
+//                 });
+
+//                 res.json({ "status": "1", "payload": result[0], "message": msg_success })
+
+//             })
+
+//     })
+app.post('/api/app/get_zone_area', (req, res) => {
+
+    console.log("1. API CALLED");
+console.log("API CALLED SUCCESSFULLY");
+    db.query(
+        "SELECT `zone_id`, `name` FROM `zone_detail` WHERE `status` = ?;" +
+        "SELECT `ad`.`area_id`, `ad`.`zone_id`, `ad`.`name`, `zd`.`name` AS `zone_name` " +
+        "FROM `area_detail` AS `ad` " +
+        "INNER JOIN `zone_detail` AS `zd` " +
+        "ON `zd`.`zone_id` = `ad`.`zone_id` AND `zd`.`status` = '1' " +
+        "WHERE `ad`.`status` = ?",
+        ["1", "1"],
+        (err, result) => {
+
+            if (err) {
+                console.error("2. DATABASE ERROR:", err);
+                return res.status(500).json({
+                    status: "0",
+                    message: err.message
                 });
+            }
 
-                res.json({ "status": "1", "payload": result[0], "message": msg_success })
+            console.log("3. QUERY SUCCESS");
 
-            })
+            console.log("4. RESULT:", result);
 
-    })
+            result[0].forEach(zObj => {
+                zObj.area_list = result[1].filter(aObj => {
+                    return aObj.zone_id == zObj.zone_id;
+                });
+            });
 
+            return res.json({
+                status: "1",
+                payload: result[0],
+                message: "Success"
+            });
+        }
+    );
+});
     app.post('/api/app/home', (req, res) => {
         helper.Dlog(req.body);
         var reqObj = req.body;

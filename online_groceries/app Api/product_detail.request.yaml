@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3001/api/app/product_detail
+method: POST
+headers:
+  access_token: pJYFk5XGrCrGZl92K5qu
+body:
+  type: urlencoded
+  content:
+    prod_id: "5"
+order: 5000

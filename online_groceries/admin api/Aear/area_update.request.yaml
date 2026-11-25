@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:3001/api/admin/area_update
+method: POST
+headers:
+  access_token: L3ROzNF2KBvQ07o0D4qi
+body:
+  type: urlencoded
+  content:
+    area_name: 1 area
+    zone_id: "2"
+    area_id: "1"
+order: 2000

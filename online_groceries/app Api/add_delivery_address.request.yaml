@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://localhost:3001/api/app/add_delivery_address
+method: POST
+headers:
+  access_token: Xm6Y67jto6aQmN7wwkQ6
+body:
+  type: urlencoded
+  content:
+    - key: name
+      value: CodeForAny2
+    - key: type_name
+      value: Home2
+      description: Home, Office
+    - key: phone
+      value: "98765432102"
+    - key: address
+      value: home, near by location2
+    - key: city
+      value: surat
+    - key: state
+      value: gujarat
+    - key: postal_code
+      value: "987654"
+order: 14000

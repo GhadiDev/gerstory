@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:3001/api/app/update_profile
+method: POST
+headers:
+  access_token: leu2kpOaiwHeFVS5EKKo
+body:
+  type: urlencoded
+  content:
+    username: username
+    name: test1
+    mobile: "9876543210"
+    mobile_code: "+91"
+order: 29000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:3001/api/app/payment_method
+method: POST
+headers:
+  access_token: BLZE1kRNy1jmVTb4Ar9r
+body:
+  type: urlencoded
+order: 22000

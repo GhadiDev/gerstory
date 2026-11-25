@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:3001/api/app/remove_cart
+method: POST
+headers:
+  access_token: j0JrTIsOgbCiLhR3UsYy
+body:
+  type: urlencoded
+  content:
+    cart_id: ""
+    prod_id: ""
+order: 13000

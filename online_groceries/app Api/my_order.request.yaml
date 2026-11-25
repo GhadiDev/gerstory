@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3001/api/app/my_order
+method: POST
+headers:
+  access_token: leu2kpOaiwHeFVS5EKKo
+body:
+  type: urlencoded
+  content:
+    address_id: "2"
+    payment_type: "1"
+    deliver_type: "1"
+    pay_id: ""
+    promo_code_id: "1"
+order: 25000

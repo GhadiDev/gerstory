@@ -1,0 +1,26 @@
+$kind: http-request
+url: http://localhost:3001/api/app/update_delivery_address
+method: POST
+headers:
+  access_token: Xm6Y67jto6aQmN7wwkQ6
+body:
+  type: urlencoded
+  content:
+    - key: name
+      value: CodeForAny
+    - key: type_name
+      value: Home1
+      description: Home, Office
+    - key: phone
+      value: "9876543211"
+    - key: address
+      value: home, near by location1
+    - key: city
+      value: surat1
+    - key: state
+      value: gujarat1
+    - key: postal_code
+      value: "987654"
+    - key: address_id
+      value: "1"
+order: 15000
